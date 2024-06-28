@@ -1,6 +1,6 @@
-import { override, addWebpackModuleRule } from 'customize-cra';
+const { override, addWebpackModuleRule } = require('customize-cra');
 
-export default override(
+module.exports = override(
   addWebpackModuleRule({
     test: /\.styl$/,
     use: [
